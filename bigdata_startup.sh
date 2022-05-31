@@ -70,6 +70,7 @@ case $resp in
 	y|ye|yes)
 		echo "开始启动 HBase......"
 		$HBASE_PATH/bin/start-hbase.sh
+		$HBASE_PATH/bin/hbase-daemon.sh start thrift
 		echo "启动完成 HBase......"
 	;;
 	*)
